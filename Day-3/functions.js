@@ -37,5 +37,8 @@ console.log(sumofnumber(10,20));
 
 // arrow function
 const sumOfNumbers = (a, b) => a + b;
-a + b; // This line is not doing anything just returning the value
+//a + b; // This line is not doing anything just returning the value
 console.log(sumOfNumbers(10, 20));
+// function call
+const sumOfnumber = (para1, para2) => para1 + para2;
+console.log(sumOfnumber(10));
