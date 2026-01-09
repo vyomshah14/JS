@@ -1,6 +1,6 @@
 // switch case
 let age = 20;
-switch (age){
+switch (true){
     case (age < 18):
         console.log("You are a minor.");
     case (age == 18):
