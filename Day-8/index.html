@@ -33,10 +33,12 @@
 
         // replace
     //    div.replaceChild(document.createElement("p"), span);
-    //     let p = div.querySelector("p");
-    //     p.textContent = "Hello World";
-    //     console.log(div.outerHTML);
-        
+        let p = div.querySelector("p");
+        p.textContent = "Hello World";
+        p.style = "color: red";
+        // p.style.display = "inline-block";
+        // console.log(p.outerHTML);
+
         //replacewith
         // let replaced = div.replaceWith("<p></p>");
         // console.log(replaced);

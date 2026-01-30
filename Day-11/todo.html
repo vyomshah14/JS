@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <link rel="stylesheet" href="Learning JS/Day-11/todo.css"> -->
+    <form action="" class="Todo-task">
+    <input type="Text" id="title" value="" >
+    <input type="text" id="Description" value="" required>
+    <input type="date" id="Due-date" value="" required>
+    <button id="Submit-btn">Submit</button>
+    <ul id="list">
+       
+    </ul>
+    </form>
+
+    <script>
+        let Title =document.querySelector("#title");
+        let Des =document.querySelector("#Description");
+        let Due_date =document.querySelector("#Due-date");
+        let submitbtn = document.querySelector("#Submit-btn");
+        let ul = document.querySelector("#list");
+
+        submitbtn.addEventListener(`click`,(e) =>{
+            e.preventDefault();
+            console.log(Title.value,Des.value,Due_date.value);
+            let list = document.createElement("li");
+            list.innerText = Title.value + " " + Des.value + " " + Due_date.value;
+
+            ul.appendChild(list);
+            form.reset();
+        });
+        
+    </script>
+</body>
+</html>
